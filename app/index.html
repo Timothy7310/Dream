@@ -36,6 +36,54 @@
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <h1 class="main__title">
+                    Choose your Dream House 
+                </h1>
+                <form class="form-search">
+                    <div class="input-geo input-search">
+                        <svg class="input-search__img">
+                            <use xlink:href="img/sprite.svg#geo"></use>
+                        </svg>
+                        <span class="input-geo__text">Bali, Indonesia</span>
+                    </div>
+                    <div class="input-house input-search">
+                        <svg class="input-search__img">
+                            <use xlink:href="img/sprite.svg#home"></use>
+                        </svg>
+                        <span class="input-geo__text">Deluxe Type</span>
+                    </div>
+                    <button class="button-search">
+                        <svg class="button-search__img">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="main-slide">
+                    <picture class="main-slide__img-wrap">
+                        <source srcset="img/main/slide-1@1x.webp 1x,
+                                img/main/slide-1@2x.webp 2x"
+                                type="image/webp">
+                        <img src="img/main/slide-1@1x.jpg" 
+                            srcset="img/main/slide-1@2x.jpg 2x"
+                            class="main-slide__img"
+                            alt="">
+                    </picture>
+                    <div class="main-slide__text">
+                        <h2 class="main-slide__title">The Modern Deluxe House.</h2>
+                        <div class="main-slide__info">
+                            <svg class="main-slide__info-img">
+                                <use xlink:href="img/sprite.svg#geo"></use>
+                            </svg>
+                            <span class="main-slide__info-text">Denpasar, Bali, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
