@@ -1,0 +1,51 @@
+.header
+    padding: 64px 0px 64px 0px
+    background-color: $bg
+    &__wrap
+        display: grid
+        grid-template-columns: 1fr 3fr 2fr
+        align-items: center
+    &__logo
+        text-decoration: none
+        &-img
+            width: 130px
+            height: 26px
+    &__list
+        display: inline-grid
+        grid-auto-flow: column
+        grid-column-gap: 40px
+        list-style: none
+        padding: 0
+        margin: 0
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        text-decoration: none
+        color: $dark
+    &__profile
+        justify-self: end
+        display: inline-grid
+        grid-auto-flow: column
+        grid-column-gap: 40px
+.sign
+    &-up
+        color: $dark-blue
+        border: none
+        background-color: transparent
+        cursor: pointer
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+    &-in
+        color: $white
+        background-color: $dark-blue
+        border: none
+        cursor: pointer
+        padding: 18px 40px
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
