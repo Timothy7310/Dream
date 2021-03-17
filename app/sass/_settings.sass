@@ -27,3 +27,54 @@ img
             display: flex
             align-items: center
             justify-content: center
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        color: $dark
+        text-transform: uppercase
+        margin: 0
+.hotel-card
+    display: flex
+    flex-direction: column
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        &-wrap
+            position: relative
+            margin-bottom: 32px
+    &__type
+        position: absolute
+        bottom: 0
+        left: 0
+        padding: 27px 60px 27px 60px
+        background-color: $white
+        color: $dark-blue
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 24px
+    &__title
+        font-style: normal
+        font-weight: 800
+        font-size: 32px
+        line-height: 32px
+        letter-spacing: 0.01em
+        color: $dark
+        margin: 0px 0px 24px 0px
+    &__info
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        color: $grey
+        margin: 0px 0px 24px 0px
+    &__price
+        font-style: normal
+        font-weight: 800
+        font-size: 32px
+        line-height: 32px
+        letter-spacing: 0.01em
+        color: $light-blue
