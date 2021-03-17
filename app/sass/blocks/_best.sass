@@ -1,0 +1,33 @@
+.best
+    padding: 120px 0px 0px 0px
+    &__wrap
+        display: grid
+        grid-template-columns: minmax(min-content,375px) 1fr
+        grid-template-rows: (2,min-content) 20px min-content
+        grid-column-gap: 300px
+        grid-row-gap: 40px
+    &__headline
+        grid-column: 1 / 3
+        grid-row: 1
+        margin-bottom: 40px
+    &__title
+        grid-column: 1
+        grid-row: 2
+        font-style: normal
+        font-weight: 800
+        font-size: 48px
+        line-height: 56px
+        letter-spacing: 0.01em
+        color: $dark
+    &__link-learn-more
+        grid-column: 2
+        grid-row: 2
+        align-self: center
+        justify-self: start
+
+    &__slider
+        grid-column: 1 / 3
+        grid-row: 4
+        display: grid
+        grid-auto-flow: column
+        grid-column-gap: 32px
