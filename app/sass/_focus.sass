@@ -1,7 +1,11 @@
 .js-focus-visible :focus:not(.focus-visible)
     outline: none
 
-.button
+button
+    &:focus
+        outline: 3px solid $blue-focus
+        outline-offset: 2px
+.button-send
     &:focus
         outline: 3px solid $blue-focus
         outline-offset: 2px
@@ -13,4 +17,8 @@ a
     &__input
         &:focus
             outline: 0
-            // box-shadow: 0 10px 10px -10px $dark-blue, 0 -10px 10px -10px $dark-blue
+            box-shadow: 0 10px 10px -10px $dark-blue, 0 -10px 10px -10px $dark-blue
+    &__message
+        &:focus
+            outline: 0
+            box-shadow: 0 10px 10px -10px $dark-blue, 0 -10px 10px -10px $dark-blue

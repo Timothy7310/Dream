@@ -2,6 +2,7 @@
     padding: 40px 0px 64px 0px
     background-color: $dark-blue
     position: relative
+    z-index: 2
     overflow: hidden
     &__wrap
         display: flex
@@ -40,6 +41,7 @@
             line-height: 24px
             color: $white
             text-decoration: none
+            align-self: flex-start
     &__media
         display: grid
         grid-template-columns: repeat(3,min-content)
@@ -79,22 +81,32 @@
             line-height: 32px
             letter-spacing: 0.01em
             color: $dark
-        &-bg
+        &::before
+            content: ''
+            display: block
             position: absolute
+            top: -40px
+            height: 40px
             width: 70%
             background-color: #82CDE5
             left: 50%
             transform: translateX(-50%)
-            &--top
-                height: 40px
-                top: -40px
-            &--bottom
-                height: 64px
-                bottom: -64px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            height: 64px
+            bottom: -64px
+            width: 70%
+            background-color: #82CDE5
+            left: 50%
+            transform: translateX(-50%)
+
     &__ellipse
         width: 550px
         height: 550px
         position: absolute
+        z-index: -1
         &--left
             left: -50px
             bottom: -50px
