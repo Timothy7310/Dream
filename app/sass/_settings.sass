@@ -97,3 +97,19 @@ img
         font-size: 24px
         line-height: 24px
         color: $dark-blue
+
+@media  (min-width: 993px)
+
+    .main-slider-button
+        transition: .4s ease-in-out
+        &:hover
+            background: rgba(255, 255, 255, 0.38)
+            backdrop-filter: blur(50px)
+            & .main-slider-button__img
+                fill: $light-blue
+    .button-search
+        transition: .4s ease-in-out
+        &:hover
+            background-color: transparent
+            & .button-search__img
+                fill: $dark-blue

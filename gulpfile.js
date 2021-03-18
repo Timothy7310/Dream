@@ -44,6 +44,8 @@ function images(){
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/focus-visible/dist/focus-visible.min.js',
+        'app/js/swiper-bundle.min.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
