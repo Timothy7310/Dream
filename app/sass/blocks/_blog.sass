@@ -35,11 +35,13 @@
 .article
     display: flex
     align-items: center
+    justify-content: space-between
+    &__link
+        text-decoration: none
     &__img
         width: 195px
         height: 144px
         object-fit: cover
-        margin-right: 30px
     &-text
         max-width: 260px
         &__title
@@ -61,6 +63,8 @@
         display: grid
         &__link
             text-decoration: none
+            &--title
+                align-self: end
         &__img
             height: 100%
             object-fit: cover
@@ -75,7 +79,6 @@
             letter-spacing: 0.01em
             color: $dark
             margin: 0
-            align-self: end
 .author
     display: inline-grid
     grid-auto-flow: column
