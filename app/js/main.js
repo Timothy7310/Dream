@@ -1,29 +1,7 @@
 $(function(){
 
-//     const mainSlider = new Swiper('.main-slider', {
-//   // Optional parameters
-//   loop: true,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
-
-
-
-const swiper = new Swiper('.swiper-container', {
+const swiperMain = new Swiper('.main-slider', {
   loop: true,
 
 
@@ -38,6 +16,26 @@ const swiper = new Swiper('.swiper-container', {
   fadeEffect: {
     crossFade: true
   },
+
+});
+
+
+const swiperComments = new Swiper('.comments-slider', {
+  loop: true,
+
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.comments-slider-button--next',
+    prevEl: '.comments-slider-button--prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
 
 });
 
