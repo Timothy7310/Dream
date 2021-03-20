@@ -312,58 +312,95 @@
                         <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg>
                 </a>
-                <div class="best__slider">
-                    <div class="hotel-card ">
-                        <div class="hotel-card__img-wrap ">
-                            <span class="hotel-card__type">Apartment</span>
-                            <picture>
-                                <source srcset="img/section-best/slide-1@1x.webp 1x,
-                                    img/section-best/slide-1@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="img/section-best/slide-1@1x.jpg" 
-                                    srcset="img/section-best/slide-1@2x.jpg 2x"
-                                    class="hotel-card__img"
-                                    alt="">
-                            </picture>
+
+
+                <!-- If we need navigation buttons -->
+                <button class=" best-slider-button best-slider-button--prev">
+                    <svg class="best-slider-button__img">
+                        <use xlink:href="img/sprite.svg#prev-best"></use>
+                    </svg>
+                </button>
+                <button class=" best-slider-button best-slider-button--next">
+                    <svg class="best-slider-button__img">
+                        <use xlink:href="img/sprite.svg#next-best"></use>
+                    </svg>
+                </button>
+
+                <!-- Slider main container -->
+                <div class="swiper-container best__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">Apartment</span>
+                                    <picture>
+                                        <source srcset="img/section-best/slide-1@1x.webp 1x,
+                                                                img/section-best/slide-1@2x.webp 2x" type="image/webp">
+                                        <img src="img/section-best/slide-1@1x.jpg" srcset="img/section-best/slide-1@2x.jpg 2x"
+                                            class="hotel-card__img" alt="">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Denpasar Suite</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 450 Juta</span>
+                            </div>
                         </div>
-                        <h4 class="hotel-card__title">Denpasar Suite</h4>
-                        <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
-                        <span class="hotel-card__price">Rp 450 Juta</span>
-                    </div>
-                    <div class="hotel-card ">
-                        <div class="hotel-card__img-wrap ">
-                            <span class="hotel-card__type">Apartment</span>
-                            <picture>
-                                <source srcset="img/section-best/slide-2@1x.webp 1x,
-                                    img/section-best/slide-2@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="img/section-best/slide-2@1x.jpg" 
-                                    srcset="img/section-best/slide-2@2x.jpg 2x"
-                                    class="hotel-card__img"
-                                    alt="">
-                            </picture>
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">Apartment</span>
+                                    <picture>
+                                        <source srcset="img/section-best/slide-2@1x.webp 1x,
+                                                                img/section-best/slide-2@2x.webp 2x" type="image/webp">
+                                        <img src="img/section-best/slide-2@1x.jpg" srcset="img/section-best/slide-2@2x.jpg 2x"
+                                            class="hotel-card__img" alt="">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Echo Park Suite</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 550 Juta</span>
+                            </div>
                         </div>
-                        <h4 class="hotel-card__title">Echo Park Suite</h4>
-                        <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
-                        <span class="hotel-card__price">Rp 550 Juta</span>
-                    </div>
-                    <div class="hotel-card ">
-                        <div class="hotel-card__img-wrap ">
-                            <span class="hotel-card__type">House</span>
-                            <picture>
-                                <source srcset="img/section-best/slide-3@1x.webp 1x,
-                                    img/section-best/slide-3@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="img/section-best/slide-3@1x.jpg" 
-                                    srcset="img/section-best/slide-3@2x.jpg 2x"
-                                    class="hotel-card__img"
-                                    alt="">
-                            </picture>
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">House</span>
+                                    <picture>
+                                        <source srcset="img/section-best/slide-3@1x.webp 1x,
+                                                                img/section-best/slide-3@2x.webp 2x" type="image/webp">
+                                        <img src="img/section-best/slide-3@1x.jpg" srcset="img/section-best/slide-3@2x.jpg 2x"
+                                            class="hotel-card__img" alt="">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Bali Residence</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 750 Juta</span>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">House</span>
+                                    <picture>
+                                        <source srcset="img/section-best/slide-4@1x.webp 1x,
+                                                        img/section-best/slide-4@2x.webp 2x"
+                                                        type="image/webp">
+                                        <img src="img/section-best/slide-4@1x.jpg"
+                                            srcset="img/section-best/slide-4@2x.jpg 2x"
+                                            class="hotel-card__img" alt="">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Bali Echo House</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 945 Juta</span>
+                            </div>
                         </div>
-                        <h4 class="hotel-card__title">Bali Residence</h4>
-                        <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
-                        <span class="hotel-card__price">Rp 750 Juta</span>
                     </div>
+                   
+                
+                    
                 </div>
             </div>
         </div>

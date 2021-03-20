@@ -43,6 +43,26 @@ const swiperComments = new Swiper('.comments-slider', {
 
 });
 
+const swiperBest = new Swiper('.best__slider', {
+  loop: true,
+  slidesPerView: 3,
+   spaceBetween: 35,
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.best-slider-button--next',
+    prevEl: '.best-slider-button--prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+
+});
+
 
 
 
