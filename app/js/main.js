@@ -45,8 +45,6 @@ const swiperComments = new Swiper('.comments-slider', {
 
 const swiperBest = new Swiper('.best__slider', {
   loop: true,
-  slidesPerView: 3,
-   spaceBetween: 35,
   
   // Navigation arrows
   navigation: {
@@ -57,6 +55,21 @@ const swiperBest = new Swiper('.best__slider', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+   breakpoints: {
+    1200: {
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 35,
+    },
+    992: {
+        slidesPerView: 2,
+        spaceBetween: 35,
+        centeredSlides: false,
+    },
+    767: {
+        slidesPerView: 1,
+    },
   },
 
 

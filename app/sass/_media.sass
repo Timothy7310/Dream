@@ -74,7 +74,9 @@
                 line-height: 25px
             &__link
                 font-size: 16px
-
+    .best
+        &__title
+            font-size: 38px
 @media (max-width:767px)
     .container
         width: 550px
@@ -193,6 +195,33 @@
                 line-height: 30px
             &__link
                 font-size: 18px
+    .best
+        &__wrap
+            grid-template-rows: (3,min-content) 20px min-content
+            grid-template-columns: 1fr
+        &__headline
+            grid-column: 1
+            grid-row: 1
+        &__title
+            grid-column: 1
+            grid-row: 2
+        &__link-learn-more
+            grid-column: 1
+            grid-row: 3
+            justify-self: start
+        &__slider
+            grid-column: 1
+            grid-row: 5
+        &-slider
+            &-button
+                width: 40px
+                height: 40px
+                top: 56%
+                &--prev
+                    left: -15px
+                &--next
+                    right: -15px
+
 @media (max-width:576px)
     .container
         width: 90%
@@ -255,3 +284,33 @@
         &__list
             grid-column: 1
             grid-row: 4
+    .best
+        &__title
+            font-size: 35px
+            line-height: 41px
+        &-slider
+            &-button
+                top: 59%
+                &--prev
+                    left: -10px
+                &--next
+                    right: -10px
+    .link-learn-more
+        padding: 20px 25px
+        grid-column-gap: 25px
+    .headline
+        grid-column-gap: 25px
+        &__title
+            font-size: 21px
+        &__num
+            font-size: 21px
+    .hotel-card
+        &__title
+            font-size: 28px
+        &__type
+            padding: 20px 30px 20px 30px
+            font-size: 21px
+        &__info
+            font-size: 16px
+        &__price
+            font-size: 28px

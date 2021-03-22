@@ -10,13 +10,16 @@ img
     width: 100%
 
 .headline
-    display: flex
+    display: grid
+    grid-auto-flow: column
     grid-column-gap: 40px
     align-items: center
+    grid-template-columns: min-content 1fr
+    grid-template-rows: 1fr
     &__num
         font-style: normal
         font-weight: 600
-        font-size: 19px
+        font-size: 24px
         line-height: 19px
         color: $dark
         &-wrap
@@ -45,7 +48,7 @@ img
         &-wrap
             position: relative
             margin-bottom: 32px
-            width: 360px
+            width: 100%
             height: 461px
     &__type
         position: absolute
