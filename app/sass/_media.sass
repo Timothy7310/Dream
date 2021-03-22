@@ -77,6 +77,21 @@
     .best
         &__title
             font-size: 38px
+    .week
+        &__wrap
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr
+            grid-column-gap: 55px
+        &__title
+            font-size: 41px
+        &__hotel
+            &-title
+                font-size: 38px
+            &-info
+                font-size: 21px
+        &__img-wrap
+            width: 325px
+            height: 325px
 @media (max-width:767px)
     .container
         width: 550px
@@ -195,6 +210,22 @@
                 line-height: 30px
             &__link
                 font-size: 18px
+    .week
+        &__wrap
+            grid-template-columns: 1fr
+            grid-template-rows: min-content min-content
+            grid-row-gap: 60px
+        &__hotel-card
+            grid-column: 1
+            grid-row: 2
+        &__info
+            grid-column: 1
+            grid-row: 1
+            max-width: 100%
+            grid-row-gap: 35px
+        &__img-wrap
+            height: 400px
+            width: inherit
     .best
         &__wrap
             grid-template-rows: (3,min-content) 20px min-content
@@ -284,6 +315,17 @@
         &__list
             grid-column: 1
             grid-row: 4
+    .week
+        &__title
+            font-size: 35px
+            line-height: 46px
+        &__img-wrap
+            height: 350px
+        &__item
+            &-check
+                margin-right: 25px
+            &-text
+                font-size: 21px
     .best
         &__title
             font-size: 35px
