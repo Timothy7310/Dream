@@ -1,3 +1,4 @@
+
 $(function(){
 
   $('#burger').click(function (event) {
@@ -5,6 +6,8 @@ $(function(){
         $('body').toggleClass('lock');
     });
     
+
+
 const swiperMain = new Swiper('.main-slider', {
   loop: true,
 
