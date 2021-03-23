@@ -91,18 +91,54 @@ img
     align-items: center
     grid-column-gap: 32px
     text-decoration: none
+    position: relative
+    z-index: 2
     &__img
         width: 32px
         height: 32px
+        fill: $dark-blue
+        transition: .4s ease-in-out
     &__text
         font-style: normal
         font-weight: bold
         font-size: 24px
         line-height: 24px
         color: $dark-blue
+        transition: .4s ease-in-out
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        left: auto
+        right: 0
+        width: 0%
+        height: 100%
+        background-color: $dark-blue
+        z-index: -1
+        transition: .4s ease-in-out
 
 @media  (min-width: 993px)
 
+    .header
+        &__link
+            &:hover
+                &::after
+                    width: 100%
+                    transition: ease 0.5s
+    .sign
+        &-up
+            transition: ease .4s
+            &:hover
+                box-shadow: none
+                border-radius: 10px
+        &-in
+            transition: ease .4s
+            &:hover
+                box-shadow: none
+                border-radius: 10px
+                background-color: transparent
+                color: $second-blue
     .main-slider-button
         transition: .4s ease-in-out
         &:hover
@@ -122,10 +158,68 @@ img
         &:hover
             background-color: transparent
             & .button-search__img
-                fill: $dark-blue
+                fill: $second-blue
+    .service-card
+        transition: .4s ease-in-out
+        &:hover
+            background-color: $dark-blue
+            & .service-card__num
+                color: rgba(256,256,256,0.06)
+            & .service-card__img
+                fill: $white
+            & .service-card__title
+                color: $white
+            & .service-card__title-num
+                color: $white
+            & .service-card__info
+                color: $white
+            & .service-card__link
+                color: $white
+                &:hover
+                    opacity: 0.8
+
+    .week__link
+        transition: .4s ease-in-out
+        &:hover
+            color: lighten($dark-blue,10%)
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+    .link-learn-more
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+            & .link-learn-more__text
+                color: $white
+            & .link-learn-more__img
+                fill: $white
     .best-slider-button
         transition: .4s ease-in-out
         &:hover
             background: $light-blue
             & .best-slider-button__img
                 stroke: $white
+
+    .article-main__title
+        transition: .4s ease-in-out
+        &:hover
+            color: $light-blue
+    .article-text__title
+        transition: .4s ease-in-out
+        &:hover
+            color: $light-blue
+
+    .footer__media-link
+        transition: .4s ease-in-out
+        &:hover
+            border: none
+            & .footer__media-img
+                width: 40px
+                height: 40px
+    .button-send
+        transition: .4s ease-in-out
+        &:hover
+            color: darken($white,10%)

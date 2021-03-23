@@ -70,3 +70,17 @@
         text-transform: uppercase
         align-self: flex-end
         justify-self: start
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: auto
+            right: 0
+            width: 0%
+            height: 50%
+            background-color: $light-blue
+            z-index: -1
+            transition: .4s ease
