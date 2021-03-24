@@ -21,11 +21,11 @@ img
         font-weight: 600
         font-size: 24px
         line-height: 19px
-        color: $dark
+        color: $main-info
         &-wrap
             width: 51px
             height: 51px
-            border: 2px solid $dark
+            border: 2px solid $main-info
             border-radius: 50%
             display: flex
             align-items: center
@@ -35,7 +35,7 @@ img
         font-weight: bold
         font-size: 24px
         line-height: 24px
-        color: $dark
+        color: $main-info
         text-transform: uppercase
         margin: 0
 .hotel-card
@@ -56,7 +56,7 @@ img
         left: 0
         padding: 27px 60px 27px 60px
         background-color: $white
-        color: $dark-blue
+        color: $other
         font-style: normal
         font-weight: 500
         font-size: 24px
@@ -67,14 +67,14 @@ img
         font-size: 32px
         line-height: 32px
         letter-spacing: 0.01em
-        color: $dark
+        color: $main-info
         margin: 0px 0px 24px 0px
     &__info
         font-style: normal
         font-weight: normal
         font-size: 18px
         line-height: 18px
-        color: $grey
+        color: $second-info
         margin: 0px 0px 24px 0px
     &__price
         font-style: normal
@@ -82,10 +82,10 @@ img
         font-size: 32px
         line-height: 32px
         letter-spacing: 0.01em
-        color: $light-blue
+        color: $primary
 .link-learn-more
     padding: 34px 50px
-    border: 2px solid #003458
+    border: 2px solid $secondary
     display: inline-grid
     grid-auto-flow: column
     align-items: center
@@ -96,14 +96,14 @@ img
     &__img
         width: 32px
         height: 32px
-        fill: $dark-blue
+        fill: $secondary
         transition: .4s ease-in-out
     &__text
         font-style: normal
         font-weight: bold
         font-size: 24px
         line-height: 24px
-        color: $dark-blue
+        color: $secondary
         transition: .4s ease-in-out
     &::after
         content: ''
@@ -114,7 +114,7 @@ img
         right: 0
         width: 0%
         height: 100%
-        background-color: $dark-blue
+        background-color: $secondary
         z-index: -1
         transition: .4s ease-in-out
 
@@ -138,33 +138,33 @@ img
                 box-shadow: none
                 border-radius: 10px
                 background-color: transparent
-                color: $second-blue
+                color: $primary
     .main-slider-button
         transition: .4s ease-in-out
         &:hover
             background: rgba(255, 255, 255, 0.38)
             backdrop-filter: blur(50px)
             & .main-slider-button__img
-                fill: $light-blue
+                fill: $secondary
     .comments-slider-button
         transition: .4s ease-in-out
         &:hover
             background: rgba(255, 255, 255, 0.38)
             backdrop-filter: blur(50px)
             & .comments-slider-button__img
-                fill: $light-blue
+                fill: $secondary
     .button-search
         transition: .4s ease-in-out
         &:hover
             background-color: transparent
             & .button-search__img
-                fill: $second-blue
+                fill: $primary
     .service-card
         transition: .4s ease-in-out
         &:hover
-            background-color: $dark-blue
+            background-color: $other
             & .service-card__num
-                color: rgba(256,256,256,0.06)
+                opacity: 0.06
             & .service-card__img
                 fill: $white
             & .service-card__title
@@ -181,7 +181,7 @@ img
     .week__link
         transition: .4s ease-in-out
         &:hover
-            color: lighten($dark-blue,10%)
+            color: lighten($primary,10%)
             &::after
                 width: 100%
                 left: 0
@@ -199,18 +199,18 @@ img
     .best-slider-button
         transition: .4s ease-in-out
         &:hover
-            background: $light-blue
+            background: $secondary
             & .best-slider-button__img
                 stroke: $white
 
     .article-main__title
         transition: .4s ease-in-out
         &:hover
-            color: $light-blue
+            color: $secondary
     .article-text__title
         transition: .4s ease-in-out
         &:hover
-            color: $light-blue
+            color: $secondary
 
     .footer__media-link
         transition: .4s ease-in-out

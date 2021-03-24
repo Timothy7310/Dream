@@ -27,12 +27,12 @@
         font-size: 18px
         line-height: 18px
         text-decoration: none
-        color: $dark
+        color: $main-info
         position: relative
         &::after
             display: block
             content: ""
-            background-color: $dark-blue
+            background-color: $primary
             height: 2px
             width: 0%
             left: 50%
@@ -49,7 +49,7 @@
         display: none
 .sign
     &-up
-        color: $second-blue
+        color: $primary
         border: none
         background-color: transparent
         cursor: pointer
@@ -57,11 +57,13 @@
         font-weight: normal
         font-size: 18px
         line-height: 18px
-        border: 3px solid $second-blue
+        border: 3px solid $primary
         box-shadow: 0px 4px 10px 2px rgba(black, 0.2)
+        &--mb
+            padding: 17px 27px
     &-in
         color: $white
-        background-color: $second-blue
+        background-color: $primary
         border: none
         cursor: pointer
         padding: 17px 39px
@@ -70,4 +72,4 @@
         font-size: 18px
         line-height: 18px
         box-shadow: 0px 4px 10px 2px rgba(black, 0.2)
-        border: 3px solid $second-blue
+        border: 3px solid $primary
