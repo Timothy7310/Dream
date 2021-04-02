@@ -400,6 +400,10 @@
         &__ellipse
             width: 450px
             height: 450px
+    .modal
+        &__dialog
+            padding: 65px 40px
+            width: 90%
 @media (max-width:576px)
     .container
         width: 90%
@@ -617,3 +621,10 @@
         &-send
             grid-column: 1
             grid-row: 4
+    .modal
+        &__dialog
+            padding: 60px 30px
+@media (max-height:576px)
+    .modal__dialog
+        height: 90%
+        overflow-y: scroll
