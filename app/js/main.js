@@ -30,7 +30,6 @@ $(function () {
   const swiperComments = new Swiper('.comments-slider', {
     loop: true,
 
-
     // Navigation arrows
     navigation: {
       nextEl: '.comments-slider-button--next',
@@ -38,9 +37,9 @@ $(function () {
     },
 
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
 
 
@@ -55,10 +54,6 @@ $(function () {
       prevEl: '.best-slider-button--prev',
     },
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
     breakpoints: {
       1200: {
         centeredSlides: true,

@@ -560,6 +560,7 @@
         &__list
             grid-template-columns: 1fr
             grid-template-rows: repeat(3,1fr)
+            grid-row-gap: 50px
         &__item
             &:nth-child(1)
                 grid-column: 1
@@ -578,6 +579,8 @@
         grid-column-gap: 0px
     .article
         justify-content: stretch
+        align-items: start
+        height: 100%
         &-main
             &__title
                 font-size: 28px
@@ -585,6 +588,9 @@
         &-text
             &__title
                 font-size: 24px
+        &__img
+            height: 250px
+
     .author
         width: 100%
         height: auto
