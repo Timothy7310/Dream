@@ -159,24 +159,13 @@ img
             background-color: transparent
             & .button-search__img
                 fill: $primary
-    .service-card
+    .service-card__link
         transition: .4s ease-in-out
         &:hover
-            background-color: $other
-            & .service-card__num
-                opacity: 0.06
-            & .service-card__img
-                fill: $white
-            & .service-card__title
-                color: $white
-            & .service-card__title-num
-                color: $white
-            & .service-card__info
-                color: $white
-            & .service-card__link
-                color: $white
-                &:hover
-                    opacity: 0.8
+            &::after
+                width: 100%
+                left: 0
+                right: 0
 
     .week__link
         transition: .4s ease-in-out
