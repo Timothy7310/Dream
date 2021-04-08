@@ -7,6 +7,15 @@
     <title>Dream</title>
     <link rel="stylesheet" href="css/style.min.css">
 
+
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -18,6 +27,12 @@
                         <use xlink:href="img/sprite.svg#logo"></use>
                     </svg>
                 </a>
+                <button id="burger" class="header__burger" aria-label="Menu.">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                    <span class="header__burger-span header__burger-span--4"></span>
+                </button>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
@@ -29,83 +44,91 @@
                         <li class="header__item">
                             <a href="#" class="header__link">Our Blog</a>
                         </li>
+                        <li class="header__item header__item--mb">
+                            <button class="sign-up sign-up--mb sign-up-toggle--mb"><span
+                                    class="sign-up-span">Register</span></button>
+                        </li>
+                        <li class="header__item header__item--mb">
+                            <button class="sign-in sign-in--mb  sign-in-toggle--mb">Login</button>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header__profile">
-                    <button class="sign-up">Register</button>
-                    <button class="sign-in">Login</button>
+                    <button class="sign-up sign-up-toggle">Register</button>
+                    <button class="sign-in sign-in-toggle">Login</button>
                 </div>
             </div>
         </div>
     </header>
-        <section class="thank-you">
-            <p class="">Thank you</p>
-        </section>
-    <footer class="footer">
-        <img src="img/sprite/ellipse.svg" class="footer__ellipse footer__ellipse--left" alt="">
-        <img src="img/sprite/ellipse.svg" class="footer__ellipse footer__ellipse--right" alt="">
+    <section class="thank-you">
         <div class="container">
-            <div class="footer__wrap">
-                <div class="footer__text">
-                    <h2 class="footer__title">Contact Us For
-                        More Information</h2>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <span class="footer__item-name">Mail</span>
-                            <a href="mailto:dream@house.com" class="footer__item-link">dream@house.com</a>
-                        </li>
-                        <li class="footer__item">
-                            <span class="footer__item-name">Phone</span>
-                            <a href="tel:+6281778890999" class="footer__item-link">+62 8177 8890 999</a>
-                        </li>
-                        <li class="footer__item">
-                            <span class="footer__item-name">Address</span>
-                            <a href="https://yandex.ru/maps/21085/surabaya/?ll=112.719214%2C-7.274237&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D112.735%252C-7.274%26spn%3D0.255%252C0.164%26text%3DIndonesia%252C%2520Jawa%2520Timur%252C%2520Surabaya&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=12"
-                                target="_blank" rel="nofollow noopener" class="footer__item-link">
-                                Jl. MH. Thamrin No 990, Surabaya, Jawa Timur, Indonesia
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer__media">
-                        <span class="footer__media-text">Social Media</span>
-                        <a href="https://ru-ru.facebook.com/" target="_blank" rel="nofollow noopener" title="Facebook"
-                            class="footer__media-link">
-                            <svg class="footer__media-img">
-                                <use xlink:href="img/sprite.svg#fb"></use>
-                            </svg>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" title="Twitter"
-                            class="footer__media-link">
-                            <svg class="footer__media-img">
-                                <use xlink:href="img/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener" title="Instagram"
-                            class="footer__media-link">
-                            <svg class="footer__media-img">
-                                <use xlink:href="img/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__form">
-
-                    <h3 class="footer__form-title">
-                        What do you want to ask?
-                    </h3>
-                    <form action="send.php" method="POST" class="form">
-                        <input type="text" name="name" class="form__input" placeholder="Full Name">
-                        <input type="email" name="email" class="form__input" placeholder="Email Address">
-                        <textarea name="message" id="" class="form__message" placeholder="Message"></textarea>
-                        <button class="button-send">Send Now</button>
-                    </form>
-
-                </div>
-            </div>
+            <h1 class="thank-you-title">
+                Thank you for your letter!
+            </h1>
+            <p class="thank-you-info">We will contact you as soon as possible</p>
+            <form action="index.html" method="GET">
+                <button class="thank-you-btn">
+                    <span class="thank-you-btn__text">Back to Home</span>
+                    <svg class="thank-you-btn__img">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
-    </footer>
+    </section>
+    <div class="modal modal-sign-up">
+        <div class="modal__overlay modal-sign-up__overlay"></div>
+        <div class="modal__dialog modal-sign-up__dialog">
+            <button class="button-close button-close-sign-up" id="button-close" aria-label="Close Sign-up window."
+                autofocus>
+                <svg class="button-close__img">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+    
+            </button>
+    
+            <form class="form-modal">
+                <div class="form-modal__field">
+                    <label for="email_field" class="form-modal__field-label">E-mail:</label>
+                    <input type="email" name="email" id="email_field" class="form-modal__field-input" required>
+                </div>
+                <div class="form-modal__field">
+                    <label for="password_field" class="form-modal__field-label">Password:</label>
+                    <input type="password" name="password" id="password_field" class="form-modal__field-input" required>
+                </div>
+                <button type="submit" class="sign-up sign-up--modal">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="modal modal-sign-in">
+        <div class="modal__overlay modal-sign-in__overlay"></div>
+        <div class="modal__dialog modal-sign-in__dialog">
+            <button class="button-close button-close-sign-in" id="button-close" aria-label="Close Sign-in window."
+                autofocus>
+                <svg class="button-close__img">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+    
+            </button>
+    
+            <form class="form-modal">
+                <div class="form-modal__field">
+                    <label for="email_field" class="form-modal__field-label">E-mail:</label>
+                    <input type="email" name="email" id="email_field" class="form-modal__field-input" required>
+                </div>
+                <div class="form-modal__field">
+                    <label for="password_field" class="form-modal__field-label">Password:</label>
+                    <input type="password" name="password" id="password_field" class="form-modal__field-input" required>
+                </div>
+                <button type="submit" class="sign-in sign-in--modal">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    
     <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
     <script src="js/main.min.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>

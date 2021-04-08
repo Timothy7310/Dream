@@ -1,0 +1,53 @@
+.thank-you
+    padding: 60px 0px 0px 0px
+    height: 100vh
+    &-title
+        font-style: normal
+        font-weight: 800
+        font-size: 48px
+        line-height: 48px
+        margin: 0px 0px 50px 0px
+        letter-spacing: 0.01em
+        color: $main-info
+    &-info
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 36px
+        color: $main-info
+        margin: 0px 0px 50px 0px
+    &-btn
+        padding: 34px 50px
+        border: 2px solid $secondary
+        display: inline-grid
+        grid-auto-flow: column
+        align-items: center
+        grid-column-gap: 32px
+        cursor: pointer
+        background-color: transparent
+        position: relative
+        z-index: 2
+        &__text
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 24px
+            color: $secondary
+            transition: .4s ease-in-out
+        &__img
+            width: 32px
+            height: 32px
+            fill: $secondary
+            transition: .4s ease-in-out
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: auto
+            right: 0
+            width: 0%
+            height: 100%
+            background-color: $secondary
+            z-index: -1
+            transition: .4s ease-in-out
