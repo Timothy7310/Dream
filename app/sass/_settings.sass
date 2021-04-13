@@ -1,5 +1,6 @@
 *
     box-sizing: border-box
+
 body
     font-family: 'Metropolis', sans-serif
 
@@ -213,9 +214,11 @@ img
                     width: 40px
                     height: 40px
         &__item-link
-            transition: .4s ease-in-out
+            // transition: .4s ease-in-out
             &:hover
-                opacity: 0.6
+                & .footer__item-link-span
+                    opacity: 0.9
+                    background-size: 100% 2px
 
     .button-send
         transition: .4s ease-in-out
