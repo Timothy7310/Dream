@@ -8,8 +8,9 @@
 
     <link rel="preload" href="fonts/Metropolis-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Metropolis-Regular.woff2" as="font" type="font/woff2" crossorigin>
-
     <link rel="stylesheet" href="css/style.min.css">
+
+
 
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -106,7 +107,8 @@
                                         media="(max-width: 576px)"
                                         type="image/webp">
                                     <source srcset="img/main/slide-1@1x.webp 1x,
-                                                    img/main/slide-1@2x.webp 2x" type="image/webp">
+                                                    img/main/slide-1@2x.webp 2x" 
+                                                    type="image/webp">
                                     <img src="img/main/slide-1@1x.jpg" srcset="img/main/slide-1@2x.jpg 2x"
                                         class="main-slide__img" alt="White building with swimming pool.">
                                 </picture>
@@ -863,9 +865,9 @@
                         What do you want to ask?
                     </h3>
                     <form action="send.php" method="POST" class="form">
-                        <input type="text" name="name" class="form__input" placeholder="Full Name">
-                        <input type="email" name="email" class="form__input" placeholder="Email Address">
-                        <textarea name="message" class="form__message" placeholder="Message"></textarea>
+                        <input type="text" name="name" class="form__input" placeholder="Full Name" required>
+                        <input type="email" name="email" class="form__input" placeholder="Email Address" required>
+                        <textarea name="message" class="form__message" placeholder="Message" required></textarea>
                         <button class="button-send" type="submit">Send Now</button>
                     </form>
 
@@ -922,7 +924,8 @@
             </form>
         </div>
     </div>
-    <script src="js/main.min.js"></script>
+    <script defer src="js/main.min.js"></script>
+    
 </body>
 
 </html>
