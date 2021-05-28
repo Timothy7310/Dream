@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sign Up Modal
 
     var SignUpToggle = document.querySelector('.sign-up-toggle');
-    var SignUpToggleMobile = document.querySelector('.sign-up--mb ');
+    var SignUpToggleMobile = document.querySelector('.sign-up--mb');
     SignUpToggle.addEventListener('click', openSignUpModal);
     SignUpToggleMobile.addEventListener('click', openSignUpModal);
 
@@ -253,12 +253,12 @@ document.addEventListener('DOMContentLoaded', function() {
       focusedElementBeforeModal.focus();
     }
 
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape' && modalSignUp.classList.contains('modal-sign-up__dialog--visible') || 
+            e.code === 'Escape' && modalSignIn.classList.contains('modal-sign-in__dialog--visible')){
+          closeSignInModal();
+          closeSignUpModal();
+        }
+    });
 
-
-    document.addEventListener('keypress', function(e) {
-      if(e.keyCode == 27) {
-        closeSignInModal();
-        closeSignUpModal();
-      }
-    }); 
 }, false);
